@@ -22,7 +22,7 @@
       </ul>
       <form class="d-flex" role="search">
           <a> <%= link_to "Log In", new_user_session_path ,class:"nav-link active mx-3"  %></a>
-       <a> <%= button_to "sign out", destroy_user_session_path, methode: :delete, class:"btn btn-outline-success mx-2" %></a>
+        <%= link_to "sign out", destroy_user_session_path , method: :delete, class:"btn btn-outline-success mx-2" %>
         <a class="btn btn-outline-success" href="/users/sign_up">Sign up</a>
       </form>
     </div>

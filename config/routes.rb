@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'render/index'
   devise_for :users
   resources :posts
   get 'pages/home', to: 'pages#home'
   get 'pages/about', to: 'pages#about'
+  # delete '/users/sign_out', to: 'devise/sessions#destroy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
